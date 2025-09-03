@@ -1,0 +1,36 @@
+.main-header {
+  display: flex;
+  justify-content: center;        /* centers horizontally */
+  align-items: center;            /* centers vertically */
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: relative;             /* needed to position logout button */
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.logout-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e74c3c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.logout-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  background-color: #c0392b;
+}
